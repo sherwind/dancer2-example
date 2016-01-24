@@ -1,0 +1,6 @@
+<% vars.title = user.name %>
+<% USE Gravatar(size => 50) %>
+<h1>
+<img class="gravatar" src="<% Gravatar(email => user.email) | html %>" alt="<% user.name | html %>">
+<small><% user.name | html %><small>
+</h1>

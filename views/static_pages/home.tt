@@ -1,0 +1,5 @@
+<div class="jumbotron">
+  <h1>Welcome to the Sample App</h1>
+  <p>This is the home page for the sample application.</p>
+  <p><a class="btn btn-lg btn-primary" href="/signup" role="button">Sign up now! &raquo;</a> </p>
+</div>

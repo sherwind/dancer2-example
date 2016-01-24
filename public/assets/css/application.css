@@ -1,0 +1,17 @@
+body {
+  padding-top: 70px;
+}
+form {
+  margin: 0 0 20px;
+}
+.users li {
+  padding: 10px 0;
+}
+.users li + li {
+  border-top: 1px solid #eeeeee; 
+}
+#error_explanation ul {
+  color: #f00;
+  margin-bottom: 18px;
+  padding-left: 16px;
+}

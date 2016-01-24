@@ -1,0 +1,35 @@
+<% vars.title = 'Edit user' %>
+<h1 class="text-center">Update your profile</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <form action="/users/<% form.item.id %>" class="edit_user" id="edit_user" method="post">
+      <% INCLUDE 'shared/_error_messages.tt' %>
+
+      <% f = form.field('name') %>
+      <div class="form-group">
+        <label class="sr-only" for="<% f.id | html %>">Name</label>
+        <input type="text" class="form-control" id="<% f.id | html %>" name="<% f.html_name | html %>" placeholder="Name" value="<% f.fif | html %>">
+      </div>
+
+      <% f = form.field('email') %>
+      <div class="form-group">
+        <label class="sr-only" for="<% f.id | html %>">Email address</label>
+        <input type="email" class="form-control" id="<% f.id | html %>" name="<% f.html_name | html %>" placeholder="Email address" value="<% f.fif | html %>">
+      </div>
+
+      <% f = form.field('password') %>
+      <div class="form-group">
+        <label class="sr-only" for="<% f.id | html %>">Password</label>
+        <input type="password" class="form-control" id="<% f.id | html %>" name="<% f.html_name | html %>" placeholder="Password" value="<% f.fif | html %>">
+      </div>
+
+      <% f = form.field('password_confirmation') %>
+      <div class="form-group">
+        <label class="sr-only" for="<% f.id | html %>">Password confirmation</label>
+        <input type="password" class="form-control" id="<% f.id | html %>" name="<% f.html_name | html %>" placeholder="Password confirmation" value="<% f.fif | html %>">
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg" name="commit">Save changes</button>
+    </form>
+  </div>
+</div>

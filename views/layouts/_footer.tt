@@ -1,0 +1,4 @@
+<hr>
+<footer>
+  <p>Powered by <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %></>
+</footer>

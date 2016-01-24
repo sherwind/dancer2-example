@@ -1,0 +1,12 @@
+<% vars.title = 'All users' %>
+<% USE Gravatar(size => 52) %>
+<h1 class="text-center">All users</h1>
+
+<ul class="list-unstyled users">
+  <% FOREACH user IN users %>
+    <li>
+      <img class="gravatar" src="<% Gravatar(email => user.email) | html %>" alt="<% user.name | html %>">
+      <a href="/users/<% user.id %>"><% user.name | html %></a>
+    </li>
+  <% END %>
+</ul>

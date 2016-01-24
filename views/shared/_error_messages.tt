@@ -1,0 +1,12 @@
+<% IF form.has_errors %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">Please fix the errors below.</div>
+    <ul>
+      <% FOR field IN form.error_fields %>
+        <% FOR error IN field.errors %>
+          <li><% error %></li>
+        <% END %>
+      <% END %>
+    </ul>
+  </div>
+<% END %>
