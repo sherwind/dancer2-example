@@ -7,8 +7,9 @@ requires "Template::Plugin::Gravatar";
 requires "HTML::FormHandler";
 requires "HTML::FormHandler::Model::DBIC";
 requires "DBIx::Class::PassphraseColumn";
+requires "YAML";
 
-recommends "YAML"             => "0";
+recommends "YAML::XS"         => "0";
 recommends "URL::Encode::XS"  => "0";
 recommends "CGI::Deurl::XS"   => "0";
 recommends "HTTP::Parser::XS" => "0";
