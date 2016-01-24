@@ -11,6 +11,7 @@ This is an example of a simple [Dancer2](http://perldancer.org/) application, in
 * HTML::FormHandler - HTML form handling
 * Dancer2::Plugin::Deferred - flash message for Dancer2
 * Dancer2::Session::Simple - in-memory session backend for Dancer2 (for testing only)
+* Bootstrap - front-end framework
 
 Running the application locally
 --------------------------------
