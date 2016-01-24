@@ -4,7 +4,7 @@
     <ul>
       <% FOR field IN form.error_fields %>
         <% FOR error IN field.errors %>
-          <li><% error %></li>
+          <li><% error | html %></li>
         <% END %>
       <% END %>
     </ul>
